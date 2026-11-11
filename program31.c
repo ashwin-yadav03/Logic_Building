@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    char sName[30];
+    int iAge = 0;
+    float fMarks = 0.0f;
+
+
+    printf("Enter Your Name : \n");
+    scanf("%[^'\n']s",sName);//Enter remains in Input buffer
+
+    printf("Enter your Age : \n");
+    scanf(" %d",&iAge);//Space added
+
+    printf("Enter your Marks : \n");
+    scanf("%f",&fMarks);
+
+    printf("Welcome %s\n",sName);
+    printf("Your Age is : \n",iAge);
+    printf("Your Marks : \n",fMarks);
+    return EXIT_SUCCESS;
+}
